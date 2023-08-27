@@ -8,27 +8,34 @@
 }
 .searchInput{
     display: flex;
-    position: relative;
+    border-radius: 2em;
+    border: 2px solid var(--off-white);
+    padding: 0 1em;
+    margin-top: 1em;
+    /* position: relative; */
 }
 .searchInput input{
     height: 2em;
-    border-radius: 1em;
-    border: 2px solid var(--off-white);
     padding: 1em;
     font-size: 1.2rem;
     background: transparent;
     font-weight: bold;
+    width: 15em;
     color: var(--off-white);
+    border: none;
+}
+.searchInput input:focus{
+    outline: none;
 }
 .searchInput button{
     background: none;
     cursor: pointer;
     border: none;
     color: white;
-    position: absolute;
+    /* position: absolute; */
     right: 10px;
-    top:50%;
-    transform: translateY(-50%);
+    /* top:50%;
+    transform: translateY(-50%); */
 }
 .walletButton{
     padding: 1em;

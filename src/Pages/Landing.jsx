@@ -10,7 +10,6 @@ function Landing() {
   return (
     <div className='landingPage'>
         <Sidebar/>
-        <SearchBar/>
         <Routes>
             <Route path={'/'} element={<TokenSearch />}/>
             <Route path={'/token'} element={<TokenSearch />}/>
