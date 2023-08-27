@@ -1,7 +1,14 @@
 @media screen and (max-width:1000px) {
     .landingPage{
         grid-template-columns: 1fr !important;
-        grid-template-rows: 10vh 10vh 75vh 5vh;
+        grid-template-rows: .1fr .1fr .75fr .05fr !important;
+    }
+    body{
+        overflow-y: scroll;
+        height: 100% !important;
+    }
+    html{
+        height: 100% !important;
     }
     #sidebar{
         display: none;
