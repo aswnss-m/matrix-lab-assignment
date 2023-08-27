@@ -7,12 +7,16 @@ import pair_icon from  "../Assets/icons/Vector.png"
 import fb from "../Assets/icons/facebook.png";
 import twitter from "../Assets/icons/twitter.png";
 import linkedin from "../Assets/icons/linkedin.png";
+import { useNavigate } from 'react-router-dom';
 
 function Sidebar() {
-  const [activeMenuItem, setActiveMenuItem] = useState("pair");
+  const nav = useNavigate();
+  const [activeMenuItem, setActiveMenuItem] = useState("token");
 
   const handleMenuItemClick = (menuItem) => {
     setActiveMenuItem(menuItem);
+    nav(`/${menuItem}`);
+
   };
 
   return (

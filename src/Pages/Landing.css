@@ -1,7 +1,7 @@
 .landingPage{
     display: grid;
     grid-template-columns: 20vw auto;
-    grid-template-rows: 10vh 10vh auto;
+    grid-template-rows: 10vh 10vh 80vh;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.542);
     width: 100%;
