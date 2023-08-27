@@ -3,5 +3,6 @@
     grid-template-columns: 20vw auto;
     grid-template-rows: 10vh 10vh auto;
     height: 100vh;
+    background-color: rgba(0, 0, 0, 0.542);
     width: 100%;
 }

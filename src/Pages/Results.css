@@ -1,17 +1,20 @@
 .results{
     grid-column: 2/3;
     grid-row: 2/4;
-    background-color: bisque;
     display: grid;
     grid-template-rows: auto 1fr;
+    padding: 0 2em;
 }
 .resultsTitle{
     grid-row: 1/2;
+    color: var(--off-white);
 }
 .resultsCards{
     display: flex;
     flex-wrap: wrap;
     overflow-y: scroll;
     gap: 1em;
-    justify-content: center;
+}
+.resultsCards::-webkit-scrollbar {
+    display: none;
 }

@@ -1,5 +1,40 @@
 .searchBar{
     grid-column: 2/3;
     grid-row: 1/2;
-    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2em;
+}
+.searchInput{
+    display: flex;
+    position: relative;
+}
+.searchInput input{
+    height: 2em;
+    border-radius: 1em;
+    border: 2px solid var(--off-white);
+    padding: 1em;
+    font-size: 1.2rem;
+    background: transparent;
+    font-weight: bold;
+    color: var(--off-white);
+}
+.searchInput button{
+    background: none;
+    cursor: pointer;
+    border: none;
+    color: white;
+    position: absolute;
+    right: 10px;
+    top:50%;
+    transform: translateY(-50%);
+}
+.walletButton{
+    padding: 1em;
+    border: none;
+    border-radius: 1em;
+    background:linear-gradient(90deg, rgba(124, 15, 53, 1) 0%, rgba(88, 18, 102, 1) 100%);
+    color: var(--off-white);
+    font-weight: bold;
 }
