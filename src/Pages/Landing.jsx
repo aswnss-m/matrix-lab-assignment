@@ -1,7 +1,6 @@
 import React from 'react'
 import Sidebar from '../Components/Sidebar'
 import TokenSearch from './TokenSearch'
-import SearchBar from '../Components/SearchBar';
 import PairAddress from './PairAddress';
 import "./Landing.css";
 import { Routes, Route } from 'react-router-dom';
