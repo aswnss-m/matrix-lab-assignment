@@ -1,10 +1,9 @@
 import './Assets/App.css';
-import Sidebar from './Components/Sidebar';
-
+import Landing from './Pages/Landing';
 function App() {
   return (
     <div className="App">
-      <Sidebar />
+      <Landing />
     </div>
   );
 }

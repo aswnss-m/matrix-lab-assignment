@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "./Sidebar.css";
 import icon from "../Assets/icons/Vector-5.png";
 import logo from "../Assets/icons/NFTify.png";
@@ -9,6 +9,12 @@ import twitter from "../Assets/icons/twitter.png";
 import linkedin from "../Assets/icons/linkedin.png";
 
 function Sidebar() {
+  const [activeMenuItem, setActiveMenuItem] = useState("pair");
+
+  const handleMenuItemClick = (menuItem) => {
+    setActiveMenuItem(menuItem);
+  };
+
   return (
     <div className="Sidebar">
       <div className="logo">
@@ -16,11 +22,11 @@ function Sidebar() {
         <img src={logo} alt="NFTify logo" />
       </div>
       <ul className="menu">
-        <li className="menuItem">
+        <li className={`menuItem ${activeMenuItem === "token" ? "active" : ""}`} onClick={() => handleMenuItemClick("token")}>
           <img src={token_icon} alt="Token Address icon" />
           <span>Token Address</span>
         </li>
-        <li className="menuItem active">
+        <li className={`menuItem ${activeMenuItem === "pair" ? "active" : ""}`} onClick={() => handleMenuItemClick("pair")}>
             <img src={pair_icon} alt="Pair Address icon" />
             <span>Pair Address</span>
         </li>
@@ -34,4 +40,4 @@ function Sidebar() {
   )
 }
 
-export default Sidebar
+export default Sidebar;

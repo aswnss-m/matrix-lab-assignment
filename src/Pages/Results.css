@@ -1,0 +1,10 @@
+.results{
+    grid-column: 2/3;
+    grid-row: 2/4;
+    background-color: bisque;
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+.resultsTitle{
+    grid-row: 1/2;
+}
