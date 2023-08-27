@@ -11,6 +11,8 @@ import { useNavigate } from 'react-router-dom';
 
 function Sidebar() {
   const nav = useNavigate();
+  // get the current url
+  
   const [activeMenuItem, setActiveMenuItem] = useState("token");
 
   const handleMenuItemClick = (menuItem) => {
@@ -22,7 +24,7 @@ function Sidebar() {
   return (
     <div className="Sidebar">
       <div className="logo">
-        <img src={icon} alt="image-icon" />
+        <img src={icon} alt="icon" />
         <img src={logo} alt="NFTify logo" />
       </div>
       <ul className="menu">

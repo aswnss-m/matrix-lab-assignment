@@ -65,7 +65,7 @@ function Card({data}) {
             </div>
         </div>
         <div className="cardIcon">
-            <img src={info} alt="" />
+            <img src={info} alt="info icon" />
         </div>
     </div>
 
@@ -87,7 +87,7 @@ function Card({data}) {
             </div>
         </div>
         <div className="cardIcon">
-            <img src={symbol} alt="" />
+            <img src={symbol} alt="symbol icon" />
         </div>
     </div>
     <div className='card'>
@@ -107,7 +107,7 @@ function Card({data}) {
             </div>
         </div>
         <div className="cardIcon">
-            <img src={symbol} alt="" />
+            <img src={symbol} alt="symbol icon" />
         </div>
     </div>
     <div className='card'>
@@ -123,7 +123,7 @@ function Card({data}) {
             </div>
         </div>
         <div className="cardIcon">
-            <img src={price} alt="" />
+            <img src={price} alt="price used" />
         </div>
     </div>
     </>

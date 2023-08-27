@@ -11,7 +11,7 @@ function PairAddress() {
     <>
     <SearchBar props = {{
       type : 'pair',
-      placeholder : 'Search Pair Address'
+      placeholder : 'Pair Id'
     }}/>
     <div className='results'>
         <h1 className='resultsTitle'>Pair Search Results</h1>
