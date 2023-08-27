@@ -1,17 +1,19 @@
 import React,{ useState } from 'react';
 import "./SearchBar.css";
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 
 function SearchBar({props}) {
     // set the default value of the input
     const [input, setInput] = useState(props.placeholder);
+    const nav = useNavigate();
     const handleSearch = (e) => {
         e.preventDefault();
         console.log(input);
         if(props.type === 'token'){
             axios.get(` https://api.dexscreener.com/latest/dex/tokens/${input}`)
             .then((response) => {
-                console.log(response.data.pairs);
+                nav('/token',{state:{pairs:response.data.pairs}})
             })
             .catch((error) => {
                 console.log(error);
@@ -20,7 +22,7 @@ function SearchBar({props}) {
         else if(props.type === 'pair'){
             axios.get(`https://api.dexscreener.com/latest/dex/search/?q=${input}`)
             .then((response) => {
-                console.log(response.data);
+                nav('/pair',{state:{pairs:response.data.pairs}})
             })
             .catch((error) => {
                 console.log(error);

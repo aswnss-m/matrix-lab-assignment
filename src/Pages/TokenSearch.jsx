@@ -2,8 +2,12 @@ import React from 'react'
 import Card from '../Components/Card'
 import "./Results.css";
 import SearchBar from '../Components/SearchBar';
+import { useLocation } from 'react-router-dom';
 
 function TokenSearch() {
+  const nav = useLocation();
+  const val = nav.state.pairs;
+  
   return (
    <>
     <SearchBar props = {{
@@ -13,22 +17,23 @@ function TokenSearch() {
     <div className='results'>
         <h1 className='resultsTitle'>Token Search Results</h1>
         <div className='resultsCards'>
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            
+            {
+              val ? (
+                val.map((item, index) => (
+                  <Card key={index} data={item} /> // Assuming 'item' is an object containing data for the Card
+                ))
+              ) : (
+                <h1 style={{
+                  color : 'white',
+                  textAlign : 'center',
+                  width : '100%',
+                }}>Search the token</h1>
+              )
+            }     
         </div>
     </div>
     </>
   )
 }
 
-export default TokenSearch
+export default TokenSearch;
