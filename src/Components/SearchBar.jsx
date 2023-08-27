@@ -39,9 +39,17 @@ function SearchBar({props}) {
             alert("Please select a valid option");
         }
     }
+
+    const toggleSidebar = ()=>{
+        const element = document.getElementById('sidebar');
+        const button = document.getElementById('menubutton');
+        element.style.display = 'block';
+        button.style.display = 'none';
+    }
    
   return (
     <div className='searchBar'>
+                <span className='material-symbols-outlined menuButton' id='menubutton' onClick={toggleSidebar}>menu</span>
             <div className="searchInput" >
                 <input type="text" placeholder="Search" id="searchInput" onChange={(e)=>{
                     setInput(e.target.value);

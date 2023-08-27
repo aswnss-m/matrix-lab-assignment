@@ -43,6 +43,12 @@
     }
     
 }
+#closebutton{
+    color: white;
+    font-size: 2rem;
+    align-self: center;
+    display: none;
+}
 .logo{
     padding: 1em;
     justify-content:center;

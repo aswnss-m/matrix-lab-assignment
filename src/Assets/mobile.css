@@ -1,0 +1,29 @@
+@media screen and (max-width:1000px) {
+    .landingPage{
+        grid-template-columns: 1fr !important;
+        grid-template-rows: 10vh 10vh 75vh 5vh;
+    }
+    #sidebar{
+        display: none;
+        justify-content: space-between;
+        z-index: 1;
+    }
+    #menubutton{
+        cursor: pointer;
+    }
+    .results{
+        grid-column: 1/2 !important;
+    }
+    .searchBar{
+        grid-column: 1/2 !important;
+    }
+    .menuButton{
+        display: block !important;
+        color: white;
+        font-size: 2rem;
+    }
+    #closebutton{
+        display: block !important;
+        cursor: pointer;
+    }
+}

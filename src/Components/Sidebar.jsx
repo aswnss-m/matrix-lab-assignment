@@ -20,12 +20,18 @@ function Sidebar() {
     nav(`/${menuItem}`);
 
   };
-
+  const handleClose = () =>{
+    const element = document.getElementById('sidebar');
+    const button = document.getElementById('closebutton');
+    element.style.display = 'none';
+    button.style.display = 'none';
+  }
   return (
-    <div className="Sidebar">
+    <div className="Sidebar" id='sidebar'>
       <div className="logo">
         <img src={icon} alt="icon" />
         <img src={logo} alt="NFTify logo" />
+        <span className='material-symbols-outlined' id='closebutton' onClick={handleClose}>close</span>
       </div>
       <ul className="menu">
         <li className={`menuItem ${activeMenuItem === "token" ? "active" : ""}`} onClick={() => handleMenuItemClick("token")}>

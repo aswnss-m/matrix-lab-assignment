@@ -6,6 +6,9 @@
     justify-content: space-between;
     padding: 0 2em;
 }
+.menuButton{
+    display: none;
+}
 .searchInput{
     display: flex;
     border-radius: 2em;
