@@ -1,5 +1,6 @@
 import './Assets/App.css';
 import Landing from './Pages/Landing';
+
 function App() {
   return (
     <div className="App">

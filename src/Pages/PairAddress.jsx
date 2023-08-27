@@ -5,7 +5,7 @@ import SearchBar from '../Components/SearchBar';
 import { useLocation } from 'react-router-dom';
 function PairAddress() {
   const nav = useLocation();
-  const val = nav.state.pairs;
+  const val = nav.state;
 
   return (
     <>
@@ -18,7 +18,7 @@ function PairAddress() {
         <div className='resultsCards'>
            {
               val ? (
-                val.map((item, index) => (
+                val.pairs.map((item, index) => (
                   <Card key={index} data={item} /> // Assuming 'item' is an object containing data for the Card
                 ))
               ) : (

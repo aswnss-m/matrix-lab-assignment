@@ -15,6 +15,7 @@ function Landing() {
             <Route path={'/token'} element={<TokenSearch />}/>
             <Route path={'/pair'} element={<PairAddress />}/>
         </Routes>
+        <div className="foooter"></div>
     </div>
   )
 }
