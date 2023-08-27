@@ -13,6 +13,12 @@ function Results() {
             <Card />
             <Card />
             <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            
         </div>
     </div>
   )

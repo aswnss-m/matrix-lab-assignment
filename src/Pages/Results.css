@@ -8,3 +8,10 @@
 .resultsTitle{
     grid-row: 1/2;
 }
+.resultsCards{
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    gap: 1em;
+    justify-content: center;
+}
